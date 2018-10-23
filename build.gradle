@@ -2,6 +2,7 @@
 
 buildscript {
     repositories {
+        google()  // add google() before jcenter()
         jcenter()
         maven {
             url 'https://maven.google.com/'
@@ -10,7 +11,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath 'com.android.tools.build:gradle:3.2.1'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.0'
 
@@ -21,6 +22,7 @@ buildscript {
 
 allprojects {
     repositories {
+        google()  // add google() before jcenter()
         jcenter()
         maven {
             url 'https://maven.google.com/'
