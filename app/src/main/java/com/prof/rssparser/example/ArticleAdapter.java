@@ -39,7 +39,8 @@ import java.util.Date;
 import java.util.Locale;
 
 /**
- * Created by Marco Gomiero on 12/02/2015.
+ * Created by Stavros Kalapothas
+ * based on RSS Parser.
  */
 
 public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHolder> {

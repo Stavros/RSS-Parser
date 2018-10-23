@@ -45,7 +45,8 @@ import com.prof.rssparser.Parser;
 import java.util.ArrayList;
 
 /**
- * Created by Marco Gomiero on 12/02/2015.
+ * Created by Stavros Kalapothas
+ * based on RSS Parser.
  */
 public class MainActivity extends AppCompatActivity {
 
@@ -53,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
     private ArticleAdapter mAdapter;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private ProgressBar progressBar;
-    private String urlString = "https://www.androidauthority.com/feed";
+    //private String urlString = "https://www.androidauthority.com/feed";
+    private String urlString = "https://www.arduinogr.com/feeds/posts/default?alt=rss";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -185,9 +187,9 @@ public class MainActivity extends AppCompatActivity {
             android.support.v7.app.AlertDialog alertDialog = new android.support.v7.app.AlertDialog.Builder(MainActivity.this).create();
             alertDialog.setTitle(R.string.app_name);
             alertDialog.setMessage(Html.fromHtml(MainActivity.this.getString(R.string.info_text) +
-                    " <a href='http://github.com/prof18/RSS-Parser'>GitHub.</a>" +
+                    " <a href='http://github.com/Stavros/RSS-Parser'>GitHub.</a>" +
                     MainActivity.this.getString(R.string.author)));
-            alertDialog.setButton(android.support.v7.app.AlertDialog.BUTTON_NEUTRAL, "OK",
+            alertDialog.setButton(android.support.v7.app.AlertDialog.BUTTON_NEUTRAL, "Close",
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.dismiss();
