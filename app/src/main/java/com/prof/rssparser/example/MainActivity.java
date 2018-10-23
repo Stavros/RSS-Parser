@@ -46,7 +46,7 @@ import java.util.ArrayList;
 
 /**
  * Created by Stavros Kalapothas
- * based on RSS Parser.
+ * based on RSS Parser library.
  */
 public class MainActivity extends AppCompatActivity {
 
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private ProgressBar progressBar;
     //private String urlString = "https://www.androidauthority.com/feed";
-    private String urlString = "https://www.arduinogr.com/feeds/posts/default?alt=rss";
+    private String urlString = "http://www.arduinogr.com/feeds/posts/default?alt=rss";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -183,11 +183,11 @@ public class MainActivity extends AppCompatActivity {
 
         int id = item.getItemId();
 
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_about) {
             android.support.v7.app.AlertDialog alertDialog = new android.support.v7.app.AlertDialog.Builder(MainActivity.this).create();
             alertDialog.setTitle(R.string.app_name);
             alertDialog.setMessage(Html.fromHtml(MainActivity.this.getString(R.string.info_text) +
-                    " <a href='http://github.com/Stavros/RSS-Parser'>GitHub.</a>" +
+                    " <a href='http://github.com/Stavros/RSS-Parser'>GitHub</a>" +
                     MainActivity.this.getString(R.string.author)));
             alertDialog.setButton(android.support.v7.app.AlertDialog.BUTTON_NEUTRAL, "Close",
                     new DialogInterface.OnClickListener() {

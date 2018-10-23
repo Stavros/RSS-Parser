@@ -40,7 +40,7 @@ import java.util.Locale;
 
 /**
  * Created by Stavros Kalapothas
- * based on RSS Parser.
+ * based on RSS Parser library.
  */
 
 public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHolder> {

@@ -23,13 +23,14 @@
   -->
 
 <resources>
-    <string name="app_name">Arduino GR RSS feed</string>
+    <string name="app_name">Arduino GR feed</string>
+    <string name="action_url">Url</string>
     <string name="action_about">About</string>
     <string name="alert_title">Attention!</string>
     <string name="alert_message">Unable to load data. \nCheck your connection!</string>
     <string name="alert_positive">Close</string>
     <string name="video">Video</string>
-     <string name="info_text">Simple RSS feed viewer app based on RSS Parser.
+    <string name="info_text">Website feed viewer app based on RSS Parser library.
          &lt;br /&gt;&lt;br /&gt;Source code on </string>
-    <string name="author">&lt;br /&gt;&lt;br /&gt;by Stavros Kalapothas (aka Stevaras)</string>
+    <string name="author">&lt;br /&gt;&lt;br /&gt;&#169; 2018 Stavros Kalapothas (aka Stevaras)</string>
 </resources>
