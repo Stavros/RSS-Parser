@@ -8,9 +8,9 @@ I have extended the sample app provided which shows articles from a fixed RSS fe
 
 <img src="https://github.com/Stavros/RSS-Parser/blob/master/Screenshot.png" width="30%" height="30%">
 
-You can browse the original source code <a href="https://github.com/github/RSS-Parser/tree/master/app"> in this repo.</a> 
+You can browse the original source code <a href="https://github.com/prof18/RSS-Parser/tree/master/app/src/main"> in this repo.</a> 
 
 ## Licence
 
-Forked project. Copyright (c) 2018 Stavros Kalapothas (aka Stevaras) <skalapothas@gmail.com>.
+Forked project. Copyright (c) 2018 Stavros Kalapothas (aka Stevaras) <stavros@ubinet.gr>.
 It is free software, and may be redistributed under the terms of the GNU Licence.
