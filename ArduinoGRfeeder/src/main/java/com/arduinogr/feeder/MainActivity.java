@@ -143,9 +143,10 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
                         progressBar.setVisibility(View.GONE);
                         mSwipeRefreshLayout.setRefreshing(false);
-                        Toast.makeText(MainActivity.this, "Unable to load data.",
+                        Toast.makeText(MainActivity.this, "Unable to load data. Add new feed.",
                                 Toast.LENGTH_LONG).show();
                         Log.i("Unable to load ", "articles");
+                        urlString = "http://www.arduinogr.com/feeds/posts/default?alt=rss";
                     }
                 });
             }
@@ -224,10 +225,20 @@ public class MainActivity extends AppCompatActivity {
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             url_text = input.getText().toString();
-                            if (isValidUrl(url_text)) {
+                            if ((url_text.startsWith("http://")) || (url_text.startsWith("https://"))) {
                                 urlString = url_text;
-                                return;
-                            }
+                                loadFeed();
+                            } else
+                            if (url_text.equals("null") || url_text.isEmpty())
+                            {
+                                loadFeed();
+                            } else
+                            if((!url_text.startsWith("http://")) || (!url_text.startsWith("https://")))
+                            {
+                                url_text = "http://" + url_text;
+                                urlString = url_text;
+                                loadFeed();
+                            } else
                             urlString = "http://www.arduinogr.com/feeds/posts/default?alt=rss";
                         }
                     });
